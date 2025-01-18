@@ -1,0 +1,30 @@
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+div {
+  box-sizing: border-box;
+}
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landscape .el-message {
+  top: 50% !important;
+  transform-origin: center;
+  transform: rotate(90deg) translate(-25%, -100%) !important;
+  right: 16px;
+  left: unset !important;
+  animation: move 0.4s linear;
+}
+@keyframes move {
+  0% {
+    right: -4px;
+  }
+  100% {
+    right: 16px;
+  }
+}
